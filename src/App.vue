@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<the-header title="Fake Articles App"></the-header>
+<the-article></the-article>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TheArticle from './components/articles/TheArticle.vue'
+import TheHeader from './components/layouts/TheHeader.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components:{
+    TheArticle,
+    TheHeader
+  },
+ 
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+    margin: 0;
+  body {
+    margin: 0;
+    // background-color: #2c3e50;
+   
+  }
 }
 </style>
